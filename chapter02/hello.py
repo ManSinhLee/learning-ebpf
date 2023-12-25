@@ -3,7 +3,7 @@ from bcc import BPF
 
 program = r"""
 int hello(void *ctx) {
-    bpf_trace_printk("Hello World!");
+    bpf_trace_printk("Hello eBPF!");
     return 0;
 }
 """
